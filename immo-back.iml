@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="AutoImportedSourceRoots">
+    <option name="directories">
+      <list>
+        <option value="src/main/kotlin" />
+        <option value="src/test/kotlin" />
+      </list>
+    </option>
+  </component>
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <webroots />
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/kotlin" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <setting name="provider-name" value="Hibernate" />
+        <datasource-mapping>
+          <factory-entry name="immo-back" />
+        </datasource-mapping>
+        <naming-strategy-map />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration />
+    </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 11" allPlatforms="JVM [11]" useProjectSettings="false">
+        <compilerSettings />
+        <compilerArguments>
+          <option name="jvmTarget" value="11" />
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array>
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.stereotype.Component" />
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.transaction.annotation.Transactional" />
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.scheduling.annotation.Async" />
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.cache.annotation.Cacheable" />
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.boot.test.context.SpringBootTest" />
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.validation.annotation.Validated" />
+              <option value="plugin:org.jetbrains.kotlin.noarg:annotation=javax.persistence.Entity" />
+              <option value="plugin:org.jetbrains.kotlin.noarg:annotation=javax.persistence.Embeddable" />
+              <option value="plugin:org.jetbrains.kotlin.noarg:annotation=javax.persistence.MappedSuperclass" />
+            </array>
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$KOTLIN_BUNDLED$/lib/allopen-compiler-plugin.jar" />
+              <option value="$KOTLIN_BUNDLED$/lib/noarg-compiler-plugin.jar" />
+            </array>
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/kotlin" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.gnirps:swagger:0.1.0-RC" level="project" />
+    <orderEntry type="library" name="Maven: com.gnirps:core:0.1.0-RC" level="project" />
+    <orderEntry type="library" name="Maven: com.gnirps:logging:0.1.0-RC" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.3.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-json:2.3.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.11.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:5.2.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:5.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-log4j2:2.3.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-slf4j-impl:2.13.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.13.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.13.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-jul:2.13.2" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:1.7.30" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.10.3" level="project" />
+    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.26" level="project" />
+    <orderEntry type="library" name="Maven: com.spotify:docker-maven-plugin:1.2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.spotify:docker-client:shaded:8.14.1" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.11.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.11.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.11.0" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.activation:jakarta.activation-api:1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-guava:2.11.0" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.jersey.core:jersey-client:2.30.1" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.ws.rs:jakarta.ws.rs-api:2.1.6" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.jersey.core:jersey-common:2.30.1" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.hk2:osgi-resource-locator:1.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.hk2.external:jakarta.inject:2.6.1" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.jersey.connectors:jersey-apache-connector:2.30.1" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.jersey.media:jersey-media-json-jackson:2.30.1" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.jersey.ext:jersey-entity-filtering:2.30.1" level="project" />
+    <orderEntry type="library" name="Maven: javax.activation:activation:1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.9" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.12" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.14" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.13" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-unixsocket:0.18" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-ffi:2.1.4" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jffi:1.2.15" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.github.jnr:jffi:native:1.2.15" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm-analysis:5.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm-tree:5.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm-util:5.0.3" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-x86asm:1.0.2" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-constants:0.9.8" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-enxio:0.16" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-posix:3.0.35" level="project" />
+    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.59" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk15on:1.59" level="project" />
+    <orderEntry type="library" name="Maven: com.google.auth:google-auth-library-oauth2-http:0.6.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.auth:google-auth-library-credentials:0.6.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.http-client:google-http-client:1.19.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:1.3.9" level="project" />
+    <orderEntry type="library" name="Maven: com.google.http-client:google-http-client-jackson2:1.19.0" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe:config:1.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-core:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-model:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-settings:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-settings-builder:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-builder-support:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-repository-metadata:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-plugin-api:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-model-builder:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-aether-provider:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.aether:aether-spi:1.0.2.v20150114" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.aether:aether-impl:1.0.2.v20150114" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.aether:aether-api:1.0.2.v20150114" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.aether:aether-util:1.0.2.v20150114" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.sisu:org.eclipse.sisu.plexus:0.3.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.enterprise:cdi-api:1.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.annotation:jsr250-api:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.sisu:org.eclipse.sisu.inject:0.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.sisu:sisu-guice:no_aop:3.2.5" level="project" />
+    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-interpolation:1.21" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-utils:3.0.20" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-classworlds:2.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-component-annotations:1.5.5" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.plexus:plexus-sec-dispatcher:1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.plexus:plexus-cipher:1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-artifact:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jgit:org.eclipse.jgit:3.2.0.201312181205-r" level="project" />
+    <orderEntry type="library" name="Maven: com.jcraft:jsch:0.1.46" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.javaewah:JavaEWAH:0.5.6" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.10.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-kotlin:2.10.3" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-servlet:9.4.31.v20200723" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-security:9.4.28.v20200408" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-server:9.4.31.v20200723" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:4.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate.validator:hibernate-validator:6.1.5.Final" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.validation:jakarta.validation-api:2.0.2" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.4.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jetty:2.3.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.servlet:jakarta.servlet-api:4.0.3" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.websocket:jakarta.websocket-api:1.1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-servlets:9.4.28.v20200408" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-continuation:9.4.28.v20200408" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-http:9.4.31.v20200723" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-util:9.4.31.v20200723" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-io:9.4.31.v20200723" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-webapp:9.4.28.v20200408" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-xml:9.4.28.v20200408" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-server:9.4.28.v20200408" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-common:9.4.28.v20200408" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-api:9.4.28.v20200408" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-client:9.4.28.v20200408" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-client:9.4.28.v20200408" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-servlet:9.4.28.v20200408" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:javax-websocket-server-impl:9.4.28.v20200408" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-annotations:9.4.28.v20200408" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-plus:9.4.28.v20200408" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-jndi:9.4.28.v20200408" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm-commons:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:javax-websocket-client-impl:9.4.28.v20200408" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish:jakarta.el:3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-mail:2.3.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.3.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.3.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.3.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.annotation:jakarta.annotation-api:1.3.5" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context-support:5.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.mail:jakarta.mail:1.6.5" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: io.springfox:springfox-swagger2:2.9.2" level="project" />
+    <orderEntry type="library" name="Maven: io.springfox:springfox-spi:2.9.2" level="project" />
+    <orderEntry type="library" name="Maven: io.springfox:springfox-core:2.9.2" level="project" />
+    <orderEntry type="library" name="Maven: io.springfox:springfox-schema:2.9.2" level="project" />
+    <orderEntry type="library" name="Maven: io.springfox:springfox-swagger-common:2.9.2" level="project" />
+    <orderEntry type="library" name="Maven: io.springfox:springfox-spring-web:2.9.2" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:20.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml:classmate:1.5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.30" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.2.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.2.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.2.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.2.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.mapstruct:mapstruct:1.2.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.springfox:springfox-swagger-ui:2.9.2" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger:swagger-annotations:1.5.21" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger:swagger-models:1.5.21" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.0" level="project" />
+    <orderEntry type="library" name="Maven: com.gnirps:utils:0.1.0-RC" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.10.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-jpa:2.3.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.3.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.9.5" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.3.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:3.4.5" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.2.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.transaction:jakarta.transaction-api:1.3.3" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.persistence:jakarta.persistence-api:2.2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:5.4.15.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.javassist:javassist:3.24.0-GA" level="project" />
+    <orderEntry type="library" name="Maven: net.bytebuddy:byte-buddy:1.10.10" level="project" />
+    <orderEntry type="library" name="Maven: antlr:antlr:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss:jandex:2.1.3.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.dom4j:dom4j:2.1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate.common:hibernate-commons-annotations:5.1.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.jaxb:jaxb-runtime:2.3.3" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.jaxb:txw2:2.3.3" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.istack:istack-commons-runtime:3.0.11" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:2.3.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.3.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-orm:5.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.2.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:5.2.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aspects:5.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.gnirps:mysql-database:0.1.0-RC" level="project" />
+    <orderEntry type="library" name="Maven: com.gnirps:database:0.1.0-RC" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.20" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains.kotlin:kotlin-reflect:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains.kotlin:kotlin-stdlib:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-common:1.4.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jetbrains.kotlin:kotlin-test:1.4.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jetbrains.kotlin:kotlin-test-common:1.3.72" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7" level="project" />
+  </component>
+</module>

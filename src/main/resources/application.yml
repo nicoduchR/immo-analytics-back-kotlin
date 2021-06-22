@@ -1,6 +1,10 @@
 spring:
     profiles: immo-analytics
 
+
+immo-back:
+    version: ${VERSION}
+
 gnirps:
     commons:
         service-name: immo-back
@@ -25,4 +29,4 @@ gnirps:
 
 spring:
     profiles:
-        include: logging, core, cors, swagger, utils, database, mysql, keycloak, neuroo-platform
+        include: logging, core, cors, swagger, utils, database, mysql, keycloak, immo-analytics

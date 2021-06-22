@@ -13,14 +13,17 @@
     <parent>
         <groupId>com.gnirps</groupId>
         <artifactId>gnirps-origin</artifactId>
-        <version>0.1.1-RC</version>
+        <version>0.1.0-RC</version>
         <relativePath/>
     </parent>
 
     <properties>
         <!-- versions -->
-        <gnirps.version>${project.parent.version}</gnirps.version>
-
+        <gnirps-swagger.version>${project.parent.version}</gnirps-swagger.version>
+        <gnirps-utils.version>${project.parent.version}</gnirps-utils.version>
+        <gnirps-mysql.version>${project.parent.version}</gnirps-mysql.version>
+        <gnirps-keycloak.version>${project.parent.version}</gnirps-keycloak.version>
+        <gnirps-cors.version>${project.parent.version}</gnirps-cors.version>
         <!-- docker -->
         <docker.image.prefix>nicoduch</docker.image.prefix>
         <docker.image.name>immo-back</docker.image.name>
@@ -32,15 +35,25 @@
         <dependency>
             <groupId>com.gnirps</groupId>
             <artifactId>swagger</artifactId>
-            <version>${gnirps.version}</version>
+            <version>${project.parent.version}</version>
         </dependency>
         <dependency>
             <groupId>com.gnirps</groupId>
             <artifactId>utils</artifactId>
-            <version>${gnirps.version}</version>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.gnirps</groupId>
+            <artifactId>mysql-database</artifactId>
+            <version>${gnirps-mysql.version}</version>
         </dependency>
     </dependencies>
-
+    <repositories>
+        <repository>
+            <id>gnirps</id>
+            <url>http://ns340976.ip-176-31-224.eu:9000/repository/gnirps/</url>
+        </repository>
+    </repositories>
     <build>
         <!-- define some build variables -->
         <finalName>${api-jar-name}</finalName>
