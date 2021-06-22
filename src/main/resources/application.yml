@@ -1,0 +1,28 @@
+spring:
+    profiles: immo-analytics
+
+gnirps:
+    commons:
+        service-name: immo-back
+    swagger:
+        root-redirect: /swagger-ui.html
+        api:
+            title: "Immo analytics REST API"
+            description: "CRUD REST Api"
+            version: 1.0
+    database:
+        hbm2ddl-auto: update
+        default-schema: immo
+
+    cors:
+        access-control-allow-origin: "${WS_CORS_ALLOW_ORIGIN}"
+        access-control-allow-credentials: "true"
+        access-control-allow-methods: "POST, PUT, GET, OPTIONS, DELETE"
+        access-control-allow-headers: "Authorization, Content-Type"
+        access-control-max-age: "3600"
+
+---
+
+spring:
+    profiles:
+        include: logging, core, cors, swagger, utils, database, mysql, keycloak, neuroo-platform
