@@ -95,7 +95,7 @@ class DistrictService(
      * Retrieve all [District] from the government api and store them in database every day at midnight
      * @return the the list of [District] objects
      */
-    @Scheduled(cron = "0 0 * * *")
+    @Scheduled(cron = "0 0 0 * * ?")
     fun retrieveDistricts(): List<District> {
 
         val headers = HttpHeaders()
