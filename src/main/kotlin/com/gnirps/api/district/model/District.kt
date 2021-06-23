@@ -12,6 +12,7 @@ data class District(
     @Column(columnDefinition = "VARCHAR(${ProjectProperties.UUID_SIZE})")
     val id: UUID,
 
+    @Column(unique=true)
     @NotEmpty var name: String,
 
     @NotEmpty

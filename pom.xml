@@ -13,7 +13,7 @@
     <parent>
         <groupId>com.gnirps</groupId>
         <artifactId>gnirps-origin</artifactId>
-        <version>0.1.0-RC</version>
+        <version>0.1.1-RC</version>
         <relativePath/>
     </parent>
 

@@ -15,7 +15,7 @@ gnirps:
             description: "CRUD REST Api"
             version: 1.0
     database:
-        hbm2ddl-auto: update
+        hbm2ddl-auto: validate
         default-schema: immo
 
     cors:
