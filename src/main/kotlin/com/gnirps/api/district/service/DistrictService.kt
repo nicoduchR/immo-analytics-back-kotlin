@@ -32,15 +32,6 @@ class DistrictService(
      */
     private val restTemplate = restTemplateBuilder.build()
 
-
-    /**
-     * Create a [District]
-     * @param district [District]
-     * @return The created [District] object
-     */
-    fun create(district: District): District {
-        return districtRepository.saveAndFlush(district)
-    }
     /**
      * Find all [District]
      * @return All found [District]
@@ -68,32 +59,8 @@ class DistrictService(
     }
 
     /**
-     * Update a [District]
-     * @param district [District]
-     * @return The updated [District]
-     */
-    fun update(district: District): District {
-        if (district.name.isBlank() || district.code.isBlank()) {
-            throw BadRequestException("Invalid request")
-        }
-        return districtRepository.saveAndFlush(district)
-    }
-
-    /**
-     * Delete a [District] by its [District.id]
-     * @param id [UUID]
-     * @return The deleted [District]
-     */
-    fun deleteById(id: UUID): District {
-        val district = districtRepository.findById(id).orElseThrow { EntityNotFoundException("district $id not found") }
-        districtRepository.deleteById(id)
-        return district
-    }
-
-
-    /**
      * Retrieve all [District] from the government api and store them in database every day at midnight
-     * @return the the list of [District] objects
+     * @return the list of [District] objects
      */
     @Scheduled(cron = "0 0 0 * * ?")
     fun retrieveDistricts(): List<District> {

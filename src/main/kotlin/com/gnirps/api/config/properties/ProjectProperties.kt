@@ -20,8 +20,13 @@ data class ProjectProperties (
         const val VERSION = "1.0"
 
         /**
-         * Version of the API. TODO : find a way to use it
+         * DISTRICT_API_URL
          */
         const val DISTRICT_API_URL = "https://geo.api.gouv.fr/regions"
+
+        /**
+         * DEPARTMENT_API_URL
+         */
+        const val DEPARTMENT_API_URL = "https://geo.api.gouv.fr/departements"
     }
 }
