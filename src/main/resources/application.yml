@@ -15,8 +15,10 @@ gnirps:
             description: "CRUD REST Api"
             version: 1.0
     database:
-        hbm2ddl-auto: validate
+        hbm2ddl-auto: update
         default-schema: immo
+        hibernate-additional-properties:
+            hibernate.implicit_naming_strategy: com.gnirps.api.config.CustomImplicitNamingStrategyImpl
 
     cors:
         access-control-allow-origin: "${WS_CORS_ALLOW_ORIGIN}"
