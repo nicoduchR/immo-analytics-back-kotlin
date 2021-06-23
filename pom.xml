@@ -45,7 +45,12 @@
         <dependency>
             <groupId>com.gnirps</groupId>
             <artifactId>mysql-database</artifactId>
-            <version>${gnirps-mysql.version}</version>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.gnirps</groupId>
+            <artifactId>jwt</artifactId>
+            <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
     <repositories>

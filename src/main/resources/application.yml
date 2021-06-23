@@ -27,8 +27,13 @@ gnirps:
         access-control-allow-headers: "Authorization, Content-Type"
         access-control-max-age: "3600"
 
+    jwt:
+        admin:
+            email: immo@immo.fr
+            password: immo11
+
 ---
 
 spring:
     profiles:
-        include: logging, core, cors, swagger, utils, database, mysql, keycloak, immo-analytics
+        include: logging, core, cors, swagger, utils, database, mysql, keycloak, jwt, immo-analytics

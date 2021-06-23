@@ -5,11 +5,9 @@ import com.gnirps.api.district.service.DistrictService
 import com.gnirps.api.district.dto.*
 import com.gnirps.api.district.mapper.DistrictMapper
 import com.gnirps.api.district.model.District
+import com.gnirps.jwt.annotations.AdminAccess
 import com.gnirps.logging.service.Logger
-import io.swagger.annotations.Api
-import io.swagger.annotations.ApiOperation
-import io.swagger.annotations.ApiResponse
-import io.swagger.annotations.ApiResponses
+import io.swagger.annotations.*
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 import java.util.*
@@ -37,7 +35,8 @@ class DistrictController(
      * @return [DistrictResponse]
      */
     @GetMapping("/{id}")
-    @ApiOperation(value = "Retrieve a district.")
+    @ApiOperation(value = "Retrieve a district.", authorizations = [Authorization(value = "Bearer")])
+    @AdminAccess
     @ApiResponses(
         ApiResponse(code = 200, message = "District retrieved"),
         ApiResponse(code = 400, message = "Bad request"),
@@ -58,7 +57,8 @@ class DistrictController(
      * @return [DistrictResponse]
      */
     @GetMapping("/code/{code}")
-    @ApiOperation(value = "Retrieve a district.")
+    @ApiOperation(value = "Retrieve a district.", authorizations = [Authorization(value = "Bearer")])
+    @AdminAccess
     @ApiResponses(
         ApiResponse(code = 200, message = "District retrieved"),
         ApiResponse(code = 400, message = "Bad request"),
@@ -77,7 +77,8 @@ class DistrictController(
      * @return A list of [DistrictResponse]
      */
     @GetMapping
-    @ApiOperation(value = "Retrieve all districts.")
+    @ApiOperation(value = "Retrieve all districts.", authorizations = [Authorization(value = "Bearer")])
+    @AdminAccess
     @ApiResponses(
         ApiResponse(code = 200, message = "Districts retrieved"),
         ApiResponse(code = 400, message = "Bad request"),

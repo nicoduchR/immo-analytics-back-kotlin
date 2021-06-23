@@ -11,12 +11,12 @@ import com.gnirps.api.district.dto.DistrictResponse
 import com.gnirps.api.district.mapper.DistrictMapper
 import com.gnirps.api.district.model.District
 import com.gnirps.api.district.service.DistrictService
+import com.gnirps.jwt.annotations.AdminAccess
+import com.gnirps.jwt.config.SecurityConstants
 import com.gnirps.logging.service.Logger
-import io.swagger.annotations.Api
-import io.swagger.annotations.ApiOperation
-import io.swagger.annotations.ApiResponse
-import io.swagger.annotations.ApiResponses
+import io.swagger.annotations.*
 import org.springframework.http.HttpStatus
+import org.springframework.security.access.prepost.PreAuthorize
 import org.springframework.web.bind.annotation.*
 import java.util.*
 
@@ -43,7 +43,8 @@ class DepartmentController(
      * @return [DepartmentResponse]
      */
     @GetMapping("/{id}")
-    @ApiOperation(value = "Retrieve a department.")
+    @ApiOperation(value = "Retrieve a department.", authorizations = [Authorization(value = "Bearer")])
+    @AdminAccess
     @ApiResponses(
         ApiResponse(code = 200, message = "Department retrieved"),
         ApiResponse(code = 400, message = "Bad request"),
@@ -63,7 +64,8 @@ class DepartmentController(
      * @return [DepartmentResponse]
      */
     @GetMapping("/code/{code}")
-    @ApiOperation(value = "Retrieve a department.")
+    @ApiOperation(value = "Retrieve a department.", authorizations = [Authorization(value = "Bearer")])
+    @AdminAccess
     @ApiResponses(
         ApiResponse(code = 200, message = "Department retrieved"),
         ApiResponse(code = 400, message = "Bad request"),
@@ -82,7 +84,8 @@ class DepartmentController(
      * @return A list of [DepartmentResponse]
      */
     @GetMapping
-    @ApiOperation(value = "Retrieve all departments.")
+    @ApiOperation(value = "Retrieve all departments.", authorizations = [Authorization(value = "Bearer")])
+    @AdminAccess
     @ApiResponses(
         ApiResponse(code = 200, message = "Departments retrieved"),
         ApiResponse(code = 400, message = "Bad request"),
