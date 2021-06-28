@@ -1,9 +1,7 @@
 package com.gnirps.api.department.dto
 
-import com.fasterxml.jackson.annotation.JsonProperty
 import com.gnirps.api.district.model.District
 import java.util.*
-import javax.validation.constraints.NotEmpty
 
 /**
  * The Department Response fields

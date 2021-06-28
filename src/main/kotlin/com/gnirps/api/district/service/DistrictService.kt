@@ -86,7 +86,7 @@ class DistrictService(
         val newDistricts = mutableListOf<District>()
 
         districts.forEach {
-            if (!districtRepository.existsByName(it.name)){
+            if (!districtRepository.existsByCode(it.code)){
                 newDistricts.add(it)
                 districtRepository.saveAndFlush(it)
             }

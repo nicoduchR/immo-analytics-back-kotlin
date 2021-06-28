@@ -28,5 +28,10 @@ data class ProjectProperties (
          * DEPARTMENT_API_URL
          */
         const val DEPARTMENT_API_URL = "https://geo.api.gouv.fr/departements"
+
+        /**
+         * TOWN_API_URL
+         */
+        const val TOWN_API_URL_BASE_URL = "https://geo.api.gouv.fr/departements"
     }
 }

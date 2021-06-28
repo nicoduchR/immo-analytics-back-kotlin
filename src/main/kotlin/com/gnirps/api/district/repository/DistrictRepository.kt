@@ -9,6 +9,6 @@ import java.util.*
 interface DistrictRepository : JpaRepository<District, UUID> {
     fun getDistinctByCode(code: String): District
 
-    fun existsByName(name: String): Boolean
+    fun existsByCode(code: String): Boolean
 
 }

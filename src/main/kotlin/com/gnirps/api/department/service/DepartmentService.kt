@@ -38,11 +38,39 @@ class DepartmentService(
     private val restTemplate = restTemplateBuilder.build()
 
     /**
+     * Update a [Department]
+     * @return updated [Department]
+     */
+    fun update(department: Department): Department {
+        return departmentRepository.saveAndFlush(department)
+    }
+
+
+    /**
      * Find all [Department]
      * @return All found [Department]
      */
     fun findAll(): List<Department> {
         return departmentRepository.findAll()
+    }
+
+    /**
+     * Find one [Department] with status processed at false
+     * @return One [Department] or null
+     */
+    fun findOneNotProcessed(): Department? {
+        return departmentRepository.getFirstByProcessedFalse()
+    }
+
+    /**
+     * Reset all [Department] to status processed false
+     */
+    fun resetAllDepartmentToStatusNotProcessed() {
+        val departments: List<Department> = departmentRepository.findAll()
+        departments.forEach {
+            it.processed = false
+            departmentRepository.saveAndFlush(it)
+        }
     }
 
     /**
@@ -95,7 +123,7 @@ class DepartmentService(
         val newDepartments = mutableListOf<Department>()
 
         departments.forEach {
-            if (!departmentRepository.existsByName(it.name)){
+            if (!departmentRepository.existsByCode(it.code)){
                 newDepartments.add(it)
                 departmentRepository.saveAndFlush(it)
             }

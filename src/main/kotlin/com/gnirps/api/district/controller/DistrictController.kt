@@ -1,6 +1,9 @@
 package com.gnirps.api.district.controller
 
 import com.gnirps.api.config.properties.ProjectProperties
+import com.gnirps.api.department.dto.DepartmentResponse
+import com.gnirps.api.department.mapper.DepartmentMapper
+import com.gnirps.api.department.model.Department
 import com.gnirps.api.district.service.DistrictService
 import com.gnirps.api.district.dto.*
 import com.gnirps.api.district.mapper.DistrictMapper
@@ -88,5 +91,23 @@ class DistrictController(
     @ResponseStatus(HttpStatus.OK)
     fun findAll(): List<DistrictResponse> {
         return districtService.findAll().map { DistrictMapper.toResponse(it) }
+    }
+
+    /**
+     * Refresh list of  [District]
+     * @return A list of [DistrictResponse]
+     */
+    @GetMapping("/refresh")
+    @ApiOperation(value = "Refresh list of Districts", authorizations = [Authorization(value = "Bearer")])
+    @AdminAccess
+    @ApiResponses(
+        ApiResponse(code = 200, message = "Districts retrieved"),
+        ApiResponse(code = 400, message = "Bad request"),
+        ApiResponse(code = 401, message = "Unauthorized"),
+        ApiResponse(code = 403, message = "Forbidden")
+    )
+    @ResponseStatus(HttpStatus.OK)
+    fun refreshAll(): List<DistrictResponse> {
+        return districtService.retrieveDistricts().map { DistrictMapper.toResponse(it) }
     }
 }

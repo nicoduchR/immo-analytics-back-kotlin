@@ -1,14 +1,16 @@
-package com.gnirps.api.department.model
+package com.gnirps.api.town.model
 
 import com.gnirps.api.config.properties.ProjectProperties
+import com.gnirps.api.department.model.Department
 import com.gnirps.api.district.model.District
 import java.util.*
 import javax.persistence.*
 import javax.validation.constraints.NotEmpty
 import javax.validation.constraints.NotNull
 
+
 @Entity
-data class Department(
+data class Town(
     @Id
     @org.hibernate.annotations.Type(type = "org.hibernate.type.UUIDCharType")
     @Column(length = ProjectProperties.UUID_SIZE)
@@ -21,9 +23,20 @@ data class Department(
     @Column(unique=true)
     val code: String,
 
+    @NotEmpty
+    @ElementCollection
+    val zipCodes: List<String>,
+
     @NotNull
     @ManyToOne(cascade = [CascadeType.DETACH], optional = false)
-    val district: District,
+    var department: Department,
 
-    var processed: Boolean = false
+    @NotNull
+    @ManyToOne(cascade = [CascadeType.DETACH], optional = false)
+    var district: District,
+
+    @NotEmpty
+    @Column(unique=true)
+    val population: String,
 )
+

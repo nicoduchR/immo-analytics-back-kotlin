@@ -96,4 +96,22 @@ class DepartmentController(
     fun findAll(): List<DepartmentResponse> {
         return departmentService.findAll().map { DepartmentMapper.toResponse(it) }
     }
+
+    /**
+     * Refresh list of  [Department]
+     * @return A list of [DepartmentResponse]
+     */
+    @GetMapping("/refresh")
+    @ApiOperation(value = "Refresh list of Departments", authorizations = [Authorization(value = "Bearer")])
+    @AdminAccess
+    @ApiResponses(
+        ApiResponse(code = 200, message = "Departments retrieved"),
+        ApiResponse(code = 400, message = "Bad request"),
+        ApiResponse(code = 401, message = "Unauthorized"),
+        ApiResponse(code = 403, message = "Forbidden")
+    )
+    @ResponseStatus(HttpStatus.OK)
+    fun refreshAll(): List<DepartmentResponse> {
+        return departmentService.retrieveDepartments().map { DepartmentMapper.toResponse(it) }
+    }
 }

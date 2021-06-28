@@ -12,14 +12,14 @@ class CustomImplicitNamingStrategyImpl : ImplicitNamingStrategyJpaCompliantImpl(
         val name: String = if (source.nature == ImplicitJoinColumnNameSource.Nature.ELEMENT_COLLECTION
             || source.attributePath == null) {
             (
-                    transformEntityName(source.entityNaming)
-                            + source.referencedColumnName.text.capitalize()
-                    )
+                transformEntityName(source.entityNaming)
+                        + source.referencedColumnName.text.capitalize()
+            )
         } else {
             (
-                    transformAttributePath(source.attributePath)
-                            + source.referencedColumnName.text.capitalize()
-                    )
+                transformAttributePath(source.attributePath)
+                        + source.referencedColumnName.text.capitalize()
+            )
         }
 
         return toIdentifier(name, source.buildingContext)
